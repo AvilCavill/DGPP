@@ -455,3 +455,196 @@ footer p {
     font-size: 1.1em;
     line-height: 1.6;
 }
+
+/* Estil per a la secció del Currículum */
+#curriculum {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 85%;
+    margin: auto;
+}
+
+#curriculum h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Informació personal i Resum Professional */
+#curriculum .personal-info, #curriculum .resum-professional {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #34495e;
+    font-size: 1.1em;
+}
+
+#curriculum .personal-info strong, #curriculum .resum-professional strong {
+    color: #1abc9c;
+}
+
+/* Experiència laboral, Educació i formació */
+#curriculum .experience, #curriculum .education {
+    margin-bottom: 20px;
+}
+
+#curriculum .experience h3, #curriculum .education h3 {
+    color: #1abc9c;
+    margin-bottom: 15px;
+}
+
+#curriculum .experience .job, #curriculum .education .degree {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #34495e;
+    font-size: 1.1em;
+}
+
+/* Secció d'Experiència Laboral */
+.experience {
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.experience h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenidor de cada posició laboral */
+.job {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+    font-size: 1.5em;
+    color: #2b2b2b;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.job h3 i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+/* Dades d'empresa i període */
+.job p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Llista de responsabilitats */
+.job ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.job ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #333;
+    margin: 8px 0;
+}
+
+.job ul li i {
+    color: #28a745;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+/* Habilitats tècniques */
+#curriculum .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#curriculum .skills .skill {
+    background-color: #1ABCE1;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1em;
+    margin: auto;
+}
+
+/* Idiomes */
+#curriculum .idiomes {
+    margin-bottom: 20px;
+}
+
+#curriculum .idiomes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#curriculum .idiomes li {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #34495e;
+    font-size: 1.1em;
+}
+
+/* Certificacions i Cursos */
+#curriculum .certificacions {
+    margin-bottom: 20px;
+}
+
+#curriculum .certificacions ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#curriculum .certificacions li {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #34495e;
+    font-size: 1.1em;
+}
+
+/* Enllaços d'interès */
+#curriculum .enllaços {
+    display: flex;
+    gap: 10px;
+}
+
+#curriculum .enllaços a {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin: inherit;
+}
+
+#curriculum .enllaços a:hover {
+    background-color: #2980b9;
+}
