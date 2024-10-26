@@ -1,0 +1,457 @@
+/* Estil global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: #2c3e50;
+}
+
+/* Estil del menú de navegació */
+nav {
+    background-color: #1abc9c;
+    /* Fons verd */
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Ombra suau */
+    margin-bottom: 30px;
+    /* Separació del contingut següent */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrat */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    /* Cantonades arrodonides */
+}
+
+nav ul li a:hover {
+    background-color: #16a085;
+    /* Color de fons en passar el ratolí */
+    color: #ecf0f1;
+}
+
+/* Estil per a les seccions */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Estil per a la secció de departaments */
+#departaments {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.department {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.department:hover {
+    transform: scale(1.05);
+}
+
+.department h3 {
+    color: #1abc9c;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.department ul {
+    list-style: none;
+    padding: 0;
+}
+
+.department ul li {
+    font-size: 1.1em;
+    color: #34495e;
+    margin: 8px 0;
+}
+
+/* Estil per a detalls de departaments */
+#detalls-departaments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.departament-desenvolupament {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.departament-desenvolupament h3 {
+    color: #1abc9c;
+    margin-bottom: 10px;
+}
+
+.departament-desenvolupament ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.departament-desenvolupament ul li {
+    margin-bottom: 10px;
+}
+
+/* Secció d'etapes */
+#etapes {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+    width: 85%;
+}
+
+#etapes ol {
+    list-style-type: none;
+}
+
+#etapes ol li {
+    margin-bottom: 20px;
+}
+
+#etapes h3 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+#etapes p {
+    margin-left: 20px;
+}
+
+/* Estil del peu de pàgina */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Estil per a la secció Scrum */
+#scrum {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 40px;
+}
+
+#scrum h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#scrum p {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+#scrum ul,
+#scrum ol {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#scrum ul li,
+#scrum ol li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+#scrum ul li strong,
+#scrum ol li strong {
+    color: #1abc9c;
+    font-size: 1.1em;
+}
+
+#scrum ol li {
+    padding: 15px;
+}
+
+#scrum h3 {
+    color: #1abc9c;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Secció de Apunts Git */
+/* Secció principal de Git */
+#apunts_git {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 40px;
+}
+
+#apunts_git h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estil per a les comandes de Git */
+.comanda {
+    background-color: #ecf0f1;
+    border-left: 4px solid #3498db;
+    /* Color blau per ressaltar */
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-family: 'Courier New', monospace;
+    color: #2c3e50;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.comanda strong {
+    color: #2980b9;
+}
+
+/* Estil per als exemples de codi */
+.exemple-codi {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+    margin: 10px 0;
+    overflow-x: auto;
+}
+
+.exemple-codi code {
+    color: #e74c3c;
+    /* Color per a comandes o paraules clau dins del codi */
+}
+
+/* Estil per a notificacions d'error */
+.error {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1em;
+    text-align: left;
+}
+
+.error strong {
+    color: #f5b7b1;
+}
+
+/* Estil per a consells i notes */
+.consell {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1em;
+    text-align: left;
+}
+
+.consell strong {
+    color: #16a085;
+}
+
+/* Llistes personalitzades dins de la secció de Git */
+#apunts_git ul,
+#apunts_git ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#apunts_git ul li,
+#apunts_git ol li {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #34495e;
+}
+
+/* Css secció conceptes */
+#conceptes {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 85%;
+    margin: auto;
+}
+
+#conceptes h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#conceptes ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#conceptes ul li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #34495e;
+    font-size: 1.1em;
+}
+
+#conceptes ul li strong {
+    color: #1abc9c;
+    font-size: 1.1em;
+}
+
+/* Estil per a la secció de Gitflow */
+#gitflow {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 85%;
+    margin: auto;
+}
+
+#gitflow h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#gitflow ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#gitflow ul li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #34495e;
+    font-size: 1.1em;
+}
+
+#gitflow ul li strong {
+    color: #1abc9c;
+    font-size: 1.1em;
+}
+
+/* Estil per a la secció de Conflictes */
+#conflictes {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 85%;
+    margin: auto;
+}
+
+#conflictes h2 {
+    color: #e74c3c;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#conflictes ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+#conflictes ol li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #34495e;
+    font-size: 1.1em;
+}
+
+#conflictes ol li strong {
+    color: #1abc9c;
+    font-size: 1.1em;
+}
+
+#conflictes p {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+}

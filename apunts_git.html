@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Apunts de Git</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Apunts de Git</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Apunts Inicials/Scrum</a></li>
+            <li><a href="apunts_git.html">Apunts Git</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introducció a Git -->
+    <section id="apunts_git">
+        <section id="introduccio">
+            <h2>Introducció a Git</h2>
+            <p>Git és un sistema de control de versions distribuït que permet gestionar i controlar canvis en el codi
+                font dels projectes. És àmpliament utilitzat en desenvolupament de programari gràcies a la seva eficàcia
+                i flexibilitat.</p>
+        </section>
+
+        <!-- Conceptes Bàsics de Git -->
+        <section id="conceptes">
+            <h2>Conceptes Bàsics de Git</h2>
+            <ul>
+                <li><strong>Repositori:</strong> Un repositori és una carpeta que conté tots els arxius i l'historial de
+                    versions d'un projecte. Git utilitza aquest repositori per gestionar canvis i permetre el control de
+                    versions.</li>
+                <li><strong>Commit:</strong> Un commit representa un "punt de control" en l'historial de Git. És un
+                    conjunt de canvis desats amb un missatge descriptiu per identificar què es va modificar.</li>
+                <li><strong>Stage:</strong> El stage (o staging area) és una àrea intermèdia on es col·loquen els canvis
+                    abans de fer un commit. Permet preparar els fitxers que es volen incloure en el proper commit.</li>
+                <li><strong>Fork:</strong> Un fork és una còpia d'un repositori que es crea en un compte diferent,
+                    generalment per col·laborar en projectes d'altres usuaris sense modificar l'original.</li>
+                <li><strong>Master:</strong> La branca "master" era la branca principal d'un projecte, però en la
+                    majoria de projectes actuals s'ha canviat pel nom "main". És la branca per defecte on es fan els
+                    canvis finals d'un projecte.</li>
+                <li><strong>Merge:</strong> El merge (fusió) és el procés de combinar canvis de diferents branques en
+                    una sola. Es fa servir quan es volen integrar les modificacions d'una branca en una altra.</li>
+                <li><strong>Branch:</strong> Una branch (o branca) és una línia de desenvolupament separada. Permet
+                    treballar en noves funcionalitats o corregir errors sense afectar la branca principal.</li>
+                <li><strong>Checkout:</strong> El checkout és l'acció de canviar d'una branca a una altra o d'un commit
+                    específic dins d'una branca. Permet navegar entre diferents versions del codi.</li>
+            </ul>
+        </section>
+
+
+        <!-- Configuració Inicial -->
+        <section id="configuracio">
+            <h2>Configuració Inicial de Git</h2>
+            <p>Abans de començar a treballar amb Git, és recomanable fer algunes configuracions bàsiques:</p>
+            <ul>
+                <li class="comanda"><code>git config --global user.name "Nom d'usuari"</code> - Estableix el teu nom
+                    d'usuari.</li>
+                <li class="comanda"><code>git config --global user.email "correu@exemple.com"</code> - Estableix el teu
+                    correu electrònic.</li>
+                <li class="comanda"><code>git config --global core.editor "nom_editor"</code> - Defineix l'editor de
+                    text predeterminat.</li>
+            </ul>
+        </section>
+
+        <!-- Principals Comandaments de Git -->
+        <section id="comandaments">
+            <h2>Principals Comandaments de Git</h2>
+            <ul>
+                <li class="comanda"><code>git init</code> - Crea un nou repositori Git en el directori actual.</li>
+                <li class="comanda"><code>git status</code> - Mostra l'estat dels arxius al repositori.</li>
+                <li class="comanda"><code>git add</code> - Afegeix fitxers a l'índex (staging area).</li>
+                <li class="comanda"><code>git commit -m "Missatge"</code> - Desa els canvis amb un missatge descriptiu.
+                </li>
+                <li class="comanda"><code>git log</code> - Mostra l'historial de commits.</li>
+            </ul>
+        </section>
+
+        <!-- Treball amb Branques -->
+        <section id="branques">
+            <h2>Treball amb Branques</h2>
+            <p>Les branques permeten treballar en línies de desenvolupament separades. A continuació es mostren els
+                comandaments més utilitzats:</p>
+            <ul>
+                <li class="comanda"><code>git branch nom_brança</code> - Crea una nova branca.</li>
+                <li class="comanda"><code>git checkout nom_brança</code> - Canvia a una altra branca.</li>
+                <li class="comanda"><code>git merge nom_brança</code> - Fusiona una branca amb la branca actual.</li>
+                <li class="comanda"><code>git branch -d nom_brança</code> - Elimina una branca.</li>
+            </ul>
+        </section>
+
+        <!-- Repositoris Remots -->
+        <section id="remot">
+            <h2>Repositoris Remots</h2>
+            <p>Per col·laborar amb altres desenvolupadors, podem treballar amb repositoris remots:</p>
+            <ul>
+                <li class="comanda"><code>git remote add origin URL</code> - Associa un repositori remot al projecte
+                    local.</li>
+                <li class="comanda"><code>git push -u origin master</code> - Envia els canvis al repositori remot.</li>
+                <li class="comanda"><code>git pull</code> - Obté els canvis més recents del repositori remot.</li>
+                <li class="comanda"><code>git clone URL</code> - Crea una còpia local d'un repositori remot.</li>
+            </ul>
+        </section>
+
+        <!-- Flux de Treball de Gitflow -->
+        <section id="gitflow">
+            <h2>Flux de Treball de Gitflow</h2>
+            <p>Gitflow és una estratègia de ramificació per a equips que facilita el treball en equip i la gestió de
+                versions amb Git. En el Gitflow, les principals branques són:</p>
+            <ul>
+                <li><strong>Master:</strong> Conté el codi de producció final.</li>
+                <li><strong>Develop:</strong> És la branca principal de desenvolupament on es fusionen les noves
+                    característiques.</li>
+                <li><strong>Feature Branches:</strong> Branques per a cada nova característica o funcionalitat.</li>
+                <li><strong>Release Branches:</strong> S'utilitzen per preparar una nova versió de producció.</li>
+                <li><strong>Hotfix Branches:</strong> S'utilitzen per solucionar errors crítics en producció.</li>
+            </ul>
+            <p>El flux de treball de Gitflow implica crear una branca de característiques a partir de
+                <code>develop</code>, fusionar-la a <code>develop</code> una vegada acabada i eventualment fusionar
+                <code>develop</code> a <code>master</code> per a una nova versió.</p>
+        </section>
+
+        <!-- Resolució de Conflictes en Git -->
+        <section id="conflictes">
+            <h2>Resolució de Conflictes en Git</h2>
+            <p>Els conflictes es produeixen quan dos canvis incompatibles es fan en les mateixes línies de codi. Per
+                resoldre'ls, cal:</p>
+            <ol>
+                <li>Utilitzar <code>git status</code> per identificar els fitxers en conflicte.</li>
+                <li>Obrir els fitxers en conflicte i buscar les marques de conflicte (<<<<<,=====,>>>>>).</li>
+                <li>Editar el fitxer per mantenir el codi correcte i eliminar les marques de conflicte.</li>
+                <li>Fer <code>git add</code> del fitxer corregit i després <code>git commit</code> per completar la
+                    fusió.</li>
+            </ol>
+            <p>És important comunicar-se amb l'equip per evitar conflictes i resoldre'ls ràpidament quan apareguin.</p>
+        </section>
+
+    </section>
+
+    <!-- Peu de pàgina -->
+    <footer>
+        <p>&copy; 2024 Apunts de Git</p>
+    </footer>
+
+</body>
+
+</html>
